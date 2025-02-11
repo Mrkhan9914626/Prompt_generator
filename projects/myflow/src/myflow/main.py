@@ -21,7 +21,7 @@ def run_flow(user_input):
 
 # Streamlit UI
 st.title("AI-Powered Prompt Generator")
-user_input = st.text_input("Enter your request:", "generate a prompt for a Python game")
+user_input = st.text_input("Enter your request:")
 
 if st.button("Generate Prompt"):
     with st.spinner("Generating..."):
