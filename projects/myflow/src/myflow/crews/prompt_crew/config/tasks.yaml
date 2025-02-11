@@ -1,0 +1,14 @@
+Create_prompt:
+  agent: Prompt_writer
+  description: >
+    Task the Prompt Writer with generating a new, engaging, and inspiring writing prompt.
+  expected_output: >
+    - The output should be simple and did not exceed of 20 lines 
+
+
+Review_prompt:
+  agent: Prompt_reviewer
+  description: >
+    Task the Prompt Reviewer with reviewing and enhancing the generated writing prompt.
+  expected_output: >
+    - The output should be simple and did not exceed of 20 lines 
