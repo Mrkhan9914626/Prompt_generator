@@ -1,14 +1,26 @@
 Create_prompt:
   agent: Prompt_writer
   description: >
-    Task the Prompt Writer with generating a new, engaging, and inspiring writing prompt.
+    Generate a prompt for the {user}. The prompt must be according to the below criteria:
+    - The prompt must has a persona and task set to LLM.
+    - The prompt should specify the step required to complete the task.
   expected_output: >
-    - The output should be simple and did not exceed of 20 lines 
+    - The output should be in bullet points and in following order:
+    - First to define a persona for LLm
+    - Then to define a task for LLM
+    - The overall output must be of 10 lines
 
 
 Review_prompt:
   agent: Prompt_reviewer
   description: >
-    Task the Prompt Reviewer with reviewing and enhancing the generated writing prompt.
+    - Critically review the prompt ensuring it must fulfill the criteria below.
+    - The prompt must has a persona and task set to LLM.
+    - If the prompt has complex tasks, they should be broken down into simpler tasks.
+    - The prompt should specify the step required to complete the task.
+    - The generated prompt must not contain any things that are not related to the task.
   expected_output: >
-    - The output should be simple and did not exceed of 20 lines 
+    The output should be in bullet points and in following order:
+    - First to define a persona for LLm
+    - Then to define a task for LLM
+    - The overall output must be of 10 lines
